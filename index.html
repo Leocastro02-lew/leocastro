@@ -1,0 +1,181 @@
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Castro | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+  
+    <nav class="nav">
+      <h2 class="logo">Leo Castro</h2>
+      <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-content">
+
+        <img src="pic.jpg" class="profile">
+
+        <h1>Leo Castro</h1>
+        <p>P6 Diatagon Lianga Surigao del Sur</p>
+
+        <button onclick="scrollProjects()">Explore Work</button>
+
+      </div>
+    </header>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+
+      <p>
+      I am a Computer Science student who doesn’t always love coding,
+      but I enjoy learning and improving my skills. I love playing basketball,
+      online games, and going on adventures because they help me relax,
+      stay active, and explore new experiences. I believe in learning at my own pace,
+      growing through challenges, and enjoying the journey.
+      </p>
+
+    </section>
+
+    <section id="projects" class="section">
+
+      <h2>Projects</h2>
+
+      <div class="grid">
+
+        <div class="glass" onclick="openModal('m1')">
+         Entreprenuiral Mind
+        </div>
+
+        <div class="glass" onclick="openModal('m2')">
+          Multimedia
+        </div>
+
+        <div class="glass" onclick="openModal('m3')">
+          Embedded Systems
+        </div>
+
+        <div class="glass" onclick="openModal('m4')">
+          Art Appreciation
+        </div>
+
+        <div class="glass" onclick="openModal('m5')">
+          NSTP 1
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact" class="section">
+
+      <h2>Contact</h2>
+
+      <p>Email: leoreycastro02@gmail.com</p>
+      <p>Phone: 09260439479</p>
+
+    </section>
+
+    <div id="m1" class="modal">
+
+      <span onclick="closeModal('m1')">&times;</span>
+
+      <div class="content">
+        <video controls>
+          <source src="vid.mp4" type="video/mp4">
+        </video>
+        <p>This is my final project for Entreprenuiral mind</p>
+
+      </div>
+
+    </div>
+
+
+
+    <div id="m2" class="modal">
+
+      <span onclick="closeModal('m2')">&times;</span>
+
+      <div class="content">
+
+        <img src="m1.jpg">
+        <p>Multimedia editing activity.</p>
+
+        <img src="m2.jpg">
+        <p>Photo editing project.</p>
+
+        <img src="m3.jpg">
+        <p>Creative multimedia output.</p>
+
+      </div>
+
+    </div>
+
+    <div id="m3" class="modal">
+
+      <span onclick="closeModal('m3')">&times;</span>
+
+      <div class="content">
+
+        <img src="embedded1.jpg">
+        <p>Embedded system wiring setup.</p>
+
+        <img src="embedded2.jpg">
+        <p>Microcontroller testing.</p>
+
+        <img src="embedded3.jpg">
+        <p>Final embedded system output.</p>
+
+      </div>
+
+    </div>
+
+
+    <div id="m4" class="modal">
+
+      <span onclick="closeModal('m4')">&times;</span>
+
+      <div class="content">
+        <img src="ap1.jpg">
+        <img src="ap2.jpg">
+        <img src="ap3.jpg">
+        <p>nag video recording me ani na time para sa final project.</p>
+
+      </div>
+
+    </div>
+
+    <div id="m5" class="modal">
+
+      <span onclick="closeModal('m5')">&times;</span>
+
+      <div class="content">
+
+        <img src="n1.jpg">
+        <p>NSTP training activity.</p>
+
+        <img src="n2.jpg">
+        <p>NSTP participation documentation.</p>
+
+      </div>
+
+    </div>
+
+
+    <footer>
+      © 2026 Leo Castro
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
